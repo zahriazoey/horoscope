@@ -10,7 +10,7 @@ export default function NavBar() {
                 <Nav className="mr-auto">
                     <Nav.Link href="/">Home</Nav.Link>
                     <Nav.Link href="/horoscope">Horoscope</Nav.Link>
-                    <Nav.Link href="http://localhost:8888/login">Music</Nav.Link>
+                    <Nav.Link href="https://horoscope-hits.herokuapp.com/login">Music</Nav.Link>
                 </Nav>
             </Navbar>
         </div>

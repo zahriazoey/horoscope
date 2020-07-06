@@ -18,7 +18,7 @@ export default function HomePage() {
                     </Card.Text>
                     <Link to={'/horoscope'}>
                         <Button style={homeBtns} variant="outline-secondary">Get Your Horoscope</Button></Link>
-                    <a href='http://localhost:8888/login'><Button  style={homeBtns} variant="outline-secondary">Log into Spotify to Discover New Music</Button></a>
+                    <a href='https://horoscope-hits.herokuapp.com/login'><Button  style={homeBtns} variant="outline-secondary">Log into Spotify to Discover New Music</Button></a>
                 </Card.Body>
             </Card>
         </div>

@@ -15,7 +15,7 @@ var cookieParser = require('cookie-parser');
 
 var client_id = 'ea479bf9e7b64b479b76d83b10c5effa'; // Your client id
 var client_secret = 'a576c1f392614b05b9af0116e5c01821'; // Your secret
-var redirect_uri = 'http://localhost:8888/callback'; // Your redirect uri
+var redirect_uri = 'https://horoscope-hits.herokuapp.com/callback'; // Your redirect uri
 
 /**
  * Generates a random string containing numbers and letters
@@ -36,7 +36,7 @@ var stateKey = 'spotify_auth_state';
 
 var app = express();
 
-app.use(express.static(__dirname + '/public'))
+app.use(express.static(__dirname, '/public'))
   .use(cors())
   .use(cookieParser());
   
@@ -105,7 +105,7 @@ app.get('/callback', function(req, res) {
         });
 
         // we can also pass the token to the browser to make requests from there
-        res.redirect('http://localhost:3000/music/#' +
+        res.redirect('https://horoscope-hits.netlify.app/music/#' +
           querystring.stringify({
             access_token: access_token,
             refresh_token: refresh_token
@@ -143,6 +143,8 @@ app.get('/refresh_token', function(req, res) {
     }
   });
 });
+
+
 
 console.log('Listening on 8888');
 app.listen(8888);
