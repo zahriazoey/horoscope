@@ -57,7 +57,7 @@ class MusicPage extends Component {
                     </div>
                     <div style={playlist}>
                         {playlistId.map((playlist) => {
-                            return ZodiacPlaylist
+                            return <ZodiacPlaylist playlistId={playlist.id} />
                         })}
                     </div> 
                 </Fragment>
