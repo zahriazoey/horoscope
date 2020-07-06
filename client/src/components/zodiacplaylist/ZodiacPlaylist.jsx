@@ -3,7 +3,7 @@ import Spotify from 'spotify-web-api-js';
 
 const spotifyWebApi = new Spotify();
 
-export default class ZodiacPlaylists extends Component {
+export default class ZodiacPlaylist extends Component {
     constructor(props) {
         super(props);
         const params = this.getHashParams();

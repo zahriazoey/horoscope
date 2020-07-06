@@ -14,7 +14,7 @@ import Aquarius from './zodiacplaylist/Aquarius'
 import Pisces from './zodiacplaylist/Pisces';
 import NavBar from './NavBar';
 import playlistId from './zodiacplaylist/playlistId';
-import ZodiacPlaylists from './zodiacplaylist/ZodiacPlaylist';
+import ZodiacPlaylist from './zodiacplaylist/ZodiacPlaylist';
 
 const spotifyWebApi = new Spotify();
 
@@ -56,19 +56,10 @@ class MusicPage extends Component {
                         <h1 style={{ color: 'white' }}> Select Your Zodiac to Discover New Music!</h1>
                     </div>
                     <div style={playlist}>
-                    <ZodiacPlaylists playlistId='37i9dQZF1DX2DC3Q7JOmYe' /> 
-                    <Taurus />
-                    <Gemini />
-                    <Cancer />
-                    <Leo />
-                    <Virgo />
-                    <Libra />
-                    <Scorpio />
-                    <Sag />
-                    <Capricorn />
-                    <Aquarius />
-                    <Pisces />      
-                </div> 
+                        {playlistId.map((playlist) => {
+                            return ZodiacPlaylist
+                        })}
+                    </div> 
                 </Fragment>
             )
         }
