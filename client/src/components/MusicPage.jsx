@@ -14,7 +14,7 @@ import Aquarius from './zodiacplaylist/Aquarius'
 import Pisces from './zodiacplaylist/Pisces';
 import NavBar from './NavBar';
 import playlistId from './zodiacplaylist/playlistId';
-import ZodiacPlaylists from './zodiacplaylist/zodiacplaylists';
+import ZodiacPlaylists from './zodiacplaylist/ZodiacPlaylist';
 
 const spotifyWebApi = new Spotify();
 
