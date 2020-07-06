@@ -53,8 +53,9 @@ export default class Pisces extends Component {
     render() {
         return (
             <div style={{margin: '5px'}}>
-                <>{this.state.playlistData.uri}</>
+                <a href={this.state.playlistData.uri}>
                     <img src={this.state.playlistData.image} alt='playlist' />
+                </a>
             </div>
         )
     }
