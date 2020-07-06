@@ -14,6 +14,7 @@ export default class Taurus extends Component {
                 name: '',
                 url: '',
                 image: '',
+                uri: ''
             }
 
         }
@@ -42,7 +43,8 @@ export default class Taurus extends Component {
                     playlistData: {
                         name: data.name,
                         url: data.external_urls.spotify,
-                        image: data.images[0].url
+                        image: data.images[0].url,
+                        uri: data.uri
                     }
                 })
             })

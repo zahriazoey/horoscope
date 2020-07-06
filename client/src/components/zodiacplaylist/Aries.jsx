@@ -13,6 +13,7 @@ export default class Aries extends Component {
                 name: '',
                 url: '',
                 image: '',
+                uri: ''
             },
         }
         if (params.access_token) {
@@ -41,7 +42,7 @@ export default class Aries extends Component {
                         name: data.name,
                         url: data.external_urls.spotify,
                         image: data.images[0].url,
-                        tracks: data.tracks.items
+                        uri: data.uri
                     },
                 })
             })

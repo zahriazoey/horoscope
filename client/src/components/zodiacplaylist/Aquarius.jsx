@@ -13,6 +13,7 @@ export default class Aquarius extends Component {
                 name: '',
                 url: '',
                 image: '',
+                uri: ''
             },
         }
         if (params.access_token) {
@@ -41,7 +42,8 @@ export default class Aquarius extends Component {
                     playlistData: {
                         name: data.name,
                         url: data.external_urls.spotify,
-                        image: data.images[0].url
+                        image: data.images[0].url,
+                        uri: data.uri
                     }
                 })
             })
