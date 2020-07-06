@@ -1,17 +1,5 @@
 import React, { Component, Fragment } from 'react';
 import Spotify from 'spotify-web-api-js';
-import Aries from './zodiacplaylist/Aries'
-import Taurus from './zodiacplaylist/Taurus'
-import Gemini from './zodiacplaylist/Gemini'
-import Cancer from './zodiacplaylist/Cancer'
-import Leo from './zodiacplaylist/Leo'
-import Virgo from './zodiacplaylist/Virgo';
-import Libra from './zodiacplaylist/Libra'
-import Scorpio from './zodiacplaylist/Scorpio';
-import Sag from './zodiacplaylist/Sag'
-import Capricorn from './zodiacplaylist/Capricorn'
-import Aquarius from './zodiacplaylist/Aquarius'
-import Pisces from './zodiacplaylist/Pisces';
 import NavBar from './NavBar';
 import playlistId from './zodiacplaylist/playlistId';
 import ZodiacPlaylist from './zodiacplaylist/ZodiacPlaylist';
