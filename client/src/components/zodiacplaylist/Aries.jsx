@@ -32,7 +32,7 @@ export default class Aries extends Component {
     }
 
     ariesPlaylist = (id) => {
-        spotifyWebApi.getPlaylist('37i9dQZF1DX2DC3Q7JOmYe')
+        spotifyWebApi.getPlaylist(id)
             .then((data) => {
                 console.log('updating')
                 console.log(data)
@@ -47,16 +47,16 @@ export default class Aries extends Component {
             })
     }
 
+
     componentDidMount() {
-        this.ariesPlaylist();
+        this.ariesPlaylist('37i9dQZF1DX2DC3Q7JOmYe');
     }
 
     render() {
         return (
             <div style={{margin: '5px'}}>
-                <a href={this.state.playlistData.url} target='_blank' rel="noopener noreferrer">
+                <>{this.state.playlistData.uri}</>
                     <img src={this.state.playlistData.image} alt='playlist' />
-                </a>
             </div>
         )
     }

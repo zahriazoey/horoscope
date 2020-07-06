@@ -52,7 +52,7 @@ class MusicPage extends Component {
                 <Fragment>
                     <div>
                         <NavBar />
-                        <h1 style={{ color: 'white' }}> Select your zodiac to discover new music!</h1>
+                        <h1 style={{ color: 'white' }}> Select Your Zodiac to Discover New Music!</h1>
                     </div>
                     <div style={playlist}>
                     <Aries /> 
@@ -66,7 +66,7 @@ class MusicPage extends Component {
                     <Sag />
                     <Capricorn />
                     <Aquarius />
-                    <Pisces /> 
+                    <Pisces />      
                 </div> 
                 </Fragment>
             )

@@ -55,9 +55,8 @@ export default class Scorpio extends Component {
     render() {
         return (
             <div style={{margin: '5px'}}>
-                <a href={this.state.playlistData.uri}>
+                <>{this.state.playlistData.uri}</>
                     <img src={this.state.playlistData.image} alt='playlist' />
-                </a>
             </div>
         )
     }

@@ -6,11 +6,10 @@ import '../App.css'
 export default function HomePage() {
     return (
         <div style={{maxWidth: '100%'}}>
-            <h1 style={{color: 'white', margin: '45px'}}>~Horoscopes and Hits~</h1>
+            <h1 style={{color: 'white', margin: '30px'}}>~Horoscopes and Hits~</h1>
             <Card className="text-center"> 
                 <Card.Body>
-                    {/* <Card.Title>~Horoscopes and Hits~</Card.Title> */}
-                    <Card.Text style={{fontSize: '25px'}}>
+                    <Card.Text style={{fontSize: '20px'}}>
                         This app is all about Zodiac signs. You can get your daily horoscope, along 
                         with yesterday's and tomorrow's horoscopes. You can also discover new music based on your
                         sign through Spotify. 
