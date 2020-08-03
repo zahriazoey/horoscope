@@ -2,9 +2,6 @@
 
 Horoscope and Hits is an app that allows user to check their daily horoscopes along with yesterday's and tomorrow's horoscope. The app also allows users to discover new music based on their Zodiac signs through Spotify.
 
-![Image of Horoscope](https://octodex.github.com/images/yaktocat.png)
-
-
 
 ## Installation
 In client folder: 
