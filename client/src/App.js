@@ -16,19 +16,6 @@ export default class App extends Component {
     };
   }
 
-  // zodiacDates = (zodiac) => {
-  //   const sign = zodiac;
-  //   fetch(`https://aztro.sameerkumar.website/?sign=${sign}&day=today`, {
-  //     method: "POST",
-  //   })
-  //     .then((res) => res.json())
-  //     .then((data) => {
-  //       console.log(data);
-  //       this.setState({
-  //         zodiacDate: data,
-  //       });
-  //     });
-  // };
 
   handleClick = (e) => {
     console.log(e);
